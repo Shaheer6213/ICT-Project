@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIPHAH INTERNATIONAL HOSPITAL</title>
+    <style>
+        /* General reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #3498db;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+            font-style: italic;
+        }
+
+        header h2 {
+            font-size: 24px;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 16px;
+        }
+
+        /* Main content styles */
+        main {
+            padding: 20px;
+            background-color: white;
+            margin-top: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            font-size: 22px;
+            color: #2980b9;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table th, table td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        table th {
+            background-color: #3498db;
+            color: white;
+        }
+
+        table td {
+            background-color: #ecf0f1;
+        }
+
+        /* Doctor Charges Table */
+        .charges-table td {
+            background-color: #f9f9f9;
+        }
+
+        .charges-table th {
+            background-color: #e74c3c;
+        }
+
+        /* List styles for categories */
+        .category {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 40px;
+            text-align: center;
+            color: #34495e;
+        }
+
+        /* Address section */
+        address {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            table, th, td {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Riphah International Hospital</h1>
+        <h2>Doctors List and Charges</h2>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Doctors List -->
+        <h3><q>List of Doctors with Timings</q></h3>
+        <div class="category">Anesthesiology</div>
+        <table>
+            <tr>
+                <th>Doctor Name</th>
+                <th>Specialty</th>
+                <th>Timing</th>
+            </tr>
+            <tr>
+                <td><b>Dr. Zulfiqar Ahmed</b></td>
+                <td>Anesthesiology</td>
+                <td>Monday, Tuesday & Thursday: 4:00 PM to 7:00 PM</td>
+            </tr>
+        </table>
+
+        <div class="category">Breast and General Surgery</div>
+        <table>
+            <tr>
+                <th>Doctor Name</th>
+                <th>Specialty</th>
+                <th>Timing</th>
+            </tr>
+            <tr>
+                <td><b>Dr. Lubna Habib</b></td>
+                <td>Breast and General Surgery</td>
+                <td>Monday & Friday: 3:00 PM to 4:00 PM (only for patients above 16 years of age)</td>
+            </tr>
+        </table>
+
+        <div class="category">Cardiology</div>
+        <table>
+            <tr>
+                <th>Doctor Name</th>
+                <th>Specialty</th>
+                <th>Timing</th>
+            </tr>
+            <tr>
+                <td><b>Dr. Tajuddin</b></td>
+                <td>Cardiology</td>
+                <td>Wednesday: 1:00 PM to 2:00 PM</td>
+            </tr>
+        </table>
+
+        <div class="category">Nephrology</div>
+        <table>
+            <tr>
+                <th>Doctor Name</th>
+                <th>Specialty</th>
+                <th>Timing</th>
+            </tr>
+            <tr>
+                <td><b>Dr. Anita Haroon</b></td>
+                <td>Nephrology</td>
+                <td>Tuesday: 4:00 PM to 5:00 PM</td>
+            </tr>
+        </table>
+
+        <div class="category">Ophthalmology</div>
+        <table>
+            <tr>
+                <th>Doctor Name</th>
+                <th>Specialty</th>
+                <th>Timing</th>
+            </tr>
+            <tr>
+                <td><b>Dr. Rashid Baig</b></td>
+                <td>Ophthalmology</td>
+                <td>Tuesday, Thursday: 2:15 PM to 3:00 PM, 9:45 AM to 10:15 AM (only for patients above 5 years of age)</td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <!-- Doctor Charges Section -->
+        <h3><q>Doctor Charges</q></h3>
+
+        <div class="category">Anesthesiology</div>
+        <table class="charges-table">
+            <tr>
+                <th>Fee Type</th>
+                <th>Amount</th>
+            </tr>
+            <tr>
+                <td>Consultation Fee</td>
+                <td>PKR 2,500 - 3,000</td>
+            </tr>
+            <tr>
+                <td>Follow-up Fee</td>
+                <td>PKR 1,500 - 2,000</td>
+            </tr>
+            <tr>
+                <td>Procedure Fee</td>
+                <td>PKR 10,000 - 50,000 (depending on the procedure)</td>
+            </tr>
+        </table>
+
+        <div class="category">Breast and General Surgery</div>
+        <table class="charges-table">
+            <tr>
+                <th>Fee Type</th>
+                <th>Amount</th>
+            </tr>
+            <tr>
+                <td>Consultation Fee</td>
+                <td>PKR 3,000 - 4,000</td>
+            </tr>
+            <tr>
+                <td>Follow-up Fee</td>
+                <td>PKR 2,000 - 3,000</td>
+            </tr>
+            <tr>
+                <td>Surgery Fee</td>
+                <td>PKR 50,000 - 200,000 (depending on the surgery)</td>
+            </tr>
+        </table>
+
+        <div class="category">Cardiology</div>
+        <table class="charges-table">
+            <tr>
+                <th>Fee Type</th>
+                <th>Amount</th>
+            </tr>
+            <tr>
+                <td>Consultation Fee</td>
+                <td>PKR 2,500 - 3,500</td>
+            </tr>
+            <tr>
+                <td>Follow-up Fee</td>
+                <td>PKR 1,500 - 2,500</td>
+            </tr>
+            <tr>
+                <td>Test Fee</td>
+                <td>PKR 5,000 - 20,000 (depending on the test)</td>
+            </tr>
+        </table>
+
+        <div class="category">Nephrology</div>
+        <table class="charges-table">
+            <tr>
+                <th>Fee Type</th>
+                <th>Amount</th>
+            </tr>
+            <tr>
+                <td>Consultation Fee</td>
+                <td>PKR 2,000 - 3,000</td>
+            </tr>
+            <tr>
+                <td>Follow-up Fee</td>
+                <td>PKR 1,000 - 2,000</td>
+            </tr>
+            <tr>
+                <td>Dialysis Fee</td>
+                <td>PKR 10,000 - 20,000 (depending on the dialysis type)</td>
+            </tr>
+        </table>
+
+        <div class="category">Ophthalmology</div>
+        <table class="charges-table">
+            <tr>
+                <th>Fee Type</th>
+                <th>Amount</th>
+            </tr>
+            <tr>
+                <td>Consultation Fee</td>
+                <td>PKR 2,000 - 3,000</td>
+            </tr>
+            <tr>
+                <td>Follow-up Fee</td>
+                <td>PKR 1,000 - 2,000</td>
+            </tr>
+            <tr>
+                <td>Surgery Fee</td>
+                <td>PKR 20,000 - 100,000 (depending on the surgery)</td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <!-- Address Section -->
+        <h3><i><u>Please Confirm Your Appointment with Relevant Doctor</u></i></h3>
+        <address title="Address"><b>i-14/3, Near Riphah International University, ISLAMABAD</b></address>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Riphah International Hospital. All rights reserved.</p>
+    </footer>
+</body>
+</html>
